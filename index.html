@@ -29,24 +29,15 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <body>
 <div dir="rtl" style="font-family: 'Heebo', 'Arial Hebrew', Arial, sans-serif; color: #26332F; background: #FFFFFF; font-size: 18px; font-weight: 400; line-height: 1.75; overflow-x: clip">
 
-<header style="background: #FFFFFF; position: sticky; top: 0; z-index: 50; border-bottom: 1px solid #D9D3C7">
-<div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 12px clamp(20px, 5vw, 56px); display: flex; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" aria-label="לימן גולן הנדסה וביצוע – לראש העמוד" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #0B2321">
-<span style="display: flex; align-items: stretch; gap: 11px">
-<span style="display: flex; flex-direction: column; font-size: 27px; font-weight: 900; line-height: 0.92; letter-spacing: -0.02em"><span>לימן</span><span>גולן<span aria-hidden="true" style="display: inline-block; width: 6px; height: 6px; background: #B4532A; margin-inline-start: 3px"></span></span></span>
-<span aria-hidden="true" style="width: 2px; background: #0B2321"></span>
-<span style="display: flex; flex-direction: column; justify-content: flex-end; font-size: 12.5px; font-weight: 500; line-height: 1.25; padding-bottom: 2px; color: #26332F"><span>הנדסה</span><span>וביצוע</span></span>
-</span>
-</a>
-<button type="button" id="menuBtn" aria-label="פתיחת התפריט" aria-expanded="false" aria-controls="menu" style="flex: none; width: 52px; height: 52px; padding: 0; border: 0; border-radius: 0; background: transparent; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px">
-<span aria-hidden="true" style="width: 30px; height: 3px; background: #0B2321"></span>
-<span aria-hidden="true" style="width: 30px; height: 3px; background: #0B2321"></span>
-<span aria-hidden="true" style="width: 30px; height: 3px; background: #0B2321"></span>
+<header style="position: sticky; top: 0; z-index: 50; height: 0; overflow: visible">
+<button type="button" id="menuBtn" aria-label="פתיחת התפריט" aria-expanded="false" aria-controls="menu" style="position: absolute; top: 14px; left: clamp(14px, 3vw, 28px); z-index: 2; width: 54px; height: 54px; padding: 0; border: 0; border-radius: 0; background: #0B2321; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; box-shadow: 0 4px 14px rgba(0,0,0,0.22)">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #FFFFFF"></span>
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #FFFFFF"></span>
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #E3A27E"></span>
 </button>
-</div>
 
-<nav id="menu" hidden aria-label="ניווט ראשי" style="background: #12332F">
-<div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 8px clamp(20px, 5vw, 56px) 24px; display: flex; flex-direction: column">
+<nav id="menu" hidden aria-label="ניווט ראשי" style="position: absolute; top: 0; left: 0; right: 0; background: #0B2321; box-shadow: 0 10px 30px rgba(0,0,0,0.3)">
+<div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 82px clamp(20px, 5vw, 56px) 24px; display: flex; flex-direction: column">
 <a href="#services" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">תחומי עבודה</a>
 <a href="#projects" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">פרויקטים</a>
 <a href="#about" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">אודות</a>
@@ -58,19 +49,22 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 
 <section id="top" style="background: #12332F; color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: stretch">
 <div style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(48px, 7vw, 112px) clamp(24px, 6vw, 96px); display: flex; flex-direction: column; justify-content: center; gap: clamp(22px, 3vw, 36px)">
-<span style="align-self: flex-start; font-size: 15px; font-weight: 700; letter-spacing: 0.06em; color: #0B2321; background: #E3A27E; padding: 5px 14px">קבלן רשום בסיווג ג׳1</span>
-<h1 style="margin: 0; font-size: clamp(42px, 5.6vw, 84px); font-weight: 800; line-height: 1.04; letter-spacing: -0.015em">בנייה חזקה מתחילה באנשים שאפשר לסמוך עליהם</h1>
-<p style="margin: 0; max-width: 520px; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.6; color: #DDE5E2">בנייה, שיפוץ וחיזוק מבנים בכל רחבי הארץ. מקצועיות, חשיבה מעשית ומחויבות אמיתית לתוצאה.</p>
+<div role="img" aria-label="לימן גולן הנדסה וביצוע בע״מ" style="align-self: flex-start; display: flex; align-items: stretch; gap: clamp(14px, 1.6vw, 20px); margin-bottom: clamp(6px, 1.4vw, 18px)">
+<span style="display: flex; flex-direction: column; font-size: clamp(48px, 5.4vw, 76px); font-weight: 900; line-height: 0.92; letter-spacing: -0.02em; color: #FFFFFF"><span>לימן</span><span>גולן<span aria-hidden="true" style="display: inline-block; width: 0.2em; height: 0.2em; background: #E3A27E; margin-inline-start: 0.1em"></span></span></span>
+<span aria-hidden="true" style="width: 3px; background: #FFFFFF"></span>
+<span style="display: flex; flex-direction: column; justify-content: flex-end; font-size: clamp(16px, 1.6vw, 22px); font-weight: 500; line-height: 1.3; padding-bottom: 0.3em; color: #DDE5E2"><span>הנדסה</span><span>וביצוע בע״מ</span></span>
+</div>
+<h1 style="margin: 0; font-size: clamp(42px, 5.6vw, 84px); font-weight: 800; line-height: 1.04; letter-spacing: -0.015em">בונים טוב.<br>גם כשמורכב.</h1>
+<p style="margin: 0; max-width: 520px; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.6; color: #DDE5E2">חיזוק מבנים, תוספות בנייה ושיפוצים מורכבים. ניסיון של עשרות שנים, צוותים מקצועיים ואחריות אישית משלב התכנון ועד לפרט האחרון.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px">
 <a href="#contact" style="display: inline-flex; align-items: center; min-height: 58px; box-sizing: border-box; padding: 12px 34px; background: #B4532A; color: #FFFFFF; font-size: 18px; font-weight: 700; text-decoration: none">דברו איתנו על הפרויקט שלכם</a>
-<a href="#projects" style="display: inline-flex; align-items: center; min-height: 58px; color: #FFFFFF; font-size: 17px; font-weight: 500; text-decoration: underline; text-underline-offset: 6px">לפרויקטים שלנו</a>
 </div>
 </div>
 <figure style="margin: 0; flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column">
 <img src="images/tch10.jpg" alt="בניין מגורים לבן בן שש קומות עם מרפסות ותריסים כהים, טשרניחובסקי 10 בתל אביב" style="display: block; width: 100%; flex: 1 1 auto; min-height: clamp(360px, 50vw, 680px); object-fit: cover; object-position: 50% 45%">
 <figcaption style="background: #0B2321; color: #FFFFFF; padding: 16px clamp(24px, 3vw, 40px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; font-size: 16px">
 <span style="font-weight: 700">טשרניחובסקי 10, תל אביב</span>
-<span style="color: #DDE5E2">עבודות שלד, חיזוק וגמר</span>
+<span style="color: #DDE5E2">חיזוק מבנה, תוספת קומות, ממ״דים ועבודות גמר</span>
 </figcaption>
 </figure>
 </section>
@@ -78,8 +72,8 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <section style="background: #FFFFFF; border-bottom: 1px solid #D9D3C7">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(24px, 3.4vw, 48px) clamp(24px, 5vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 22px 20px">
 <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px; border-top: 3px solid #B4532A; padding-top: 12px">
-<span style="font-size: clamp(24px, 3.2vw, 44px); font-weight: 800; line-height: 1.1; color: #12332F">ג׳1</span>
-<span style="font-size: 15px; font-weight: 500; line-height: 1.4">קבלן רשום בסיווג</span>
+<span style="font-size: clamp(24px, 3.2vw, 44px); font-weight: 800; line-height: 1.1; color: #12332F">קבלן ג׳1</span>
+<span style="font-size: 15px; font-weight: 500; line-height: 1.4">סיווג רשם הקבלנים</span>
 </div>
 <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px; border-top: 3px solid #B4532A; padding-top: 12px">
 <span style="font-size: clamp(24px, 3.2vw, 44px); font-weight: 800; line-height: 1.1; color: #12332F">עשרות שנים</span>
@@ -99,47 +93,40 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <section id="services" style="background: #EFEAE0">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-direction: column; gap: clamp(36px, 5vw, 64px)">
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 20px clamp(32px, 6vw, 96px)">
-<h2 style="margin: 0; flex: 1 1 300px; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">תחומי עבודה</h2>
-<p style="margin: 0; flex: 2 1 380px; max-width: 640px; font-size: 19px">בין אם מדובר בפרויקט בנייה, בשיפוץ מקיף או בחיזוק של מבנה קיים, אנחנו ניגשים לכל עבודה באותה רצינות.</p>
+<h2 style="margin: 0; flex: 1 1 300px; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">יודעים לבנות.<br>יודעים לפתור.</h2>
+<p style="margin: 0; flex: 2 1 380px; max-width: 640px; font-size: 19px">יש פרויקטים שדורשים יותר מביצוע לפי תוכנית. הם דורשים ניסיון בשטח, תיאום בין בעלי מקצוע ויכולת למצוא פתרונות גם כשמתגלים אתגרים בדרך. זה בדיוק סוג העבודה שאנחנו אוהבים.</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
 <div style="flex: 1 1 260px; box-sizing: border-box; background: #FFFFFF; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 16px">
 <svg aria-hidden="true" width="60" height="60" viewBox="0 0 56 56" fill="none" stroke="#B4532A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 50 H52"></path><path d="M12 50 V8 H44 V50"></path><path d="M12 22 H44 M12 36 H44"></path><path d="M12 36 L44 22 M12 50 L44 36 M12 22 L44 8"></path></svg>
 <h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">חיזוק מבנים ותמ״א 38</h3>
-<p style="margin: 0; font-size: 17px">חיזוק ושיקום מבנים קיימים, בהתאם להנחיות התכנון ההנדסי ובהקפדה על כל שלב בעבודה.</p>
+<p style="margin: 0; font-size: 17px">חיזוק ושדרוג של מבנים קיימים, תוך התמודדות עם המורכבות ההנדסית והתפעולית של עבודה בסביבה בנויה.</p>
 </div>
 <div style="flex: 1 1 260px; box-sizing: border-box; background: #FFFFFF; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 16px">
 <svg aria-hidden="true" width="60" height="60" viewBox="0 0 56 56" fill="none" stroke="#B4532A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 50 H52"></path><path d="M22 50 V6 H48 V50"></path><rect x="29" y="12" width="12" height="12"></rect><rect x="29" y="32" width="12" height="12"></rect><path d="M22 24 H7 V14 H22 M12 14 V24 M17 14 V24"></path><path d="M22 44 H7 V34 H22 M12 34 V44 M17 34 V44"></path></svg>
 <h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">תוספת מרפסות</h3>
-<p style="margin: 0; font-size: 17px">עבודה על מבנה קיים, בהתאם לתוכניות ולהנחיות המתכננים ובתיאום בין בעלי המקצוע.</p>
+<p style="margin: 0; font-size: 17px">תכנון הביצוע והקמה של מרפסות במבנים קיימים, תוך הקפדה על החיבור למבנה, על התיאום בין בעלי המקצוע ועל איכות הגמר.</p>
 </div>
 <div style="flex: 1 1 260px; box-sizing: border-box; background: #FFFFFF; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 16px">
 <svg aria-hidden="true" width="60" height="60" viewBox="0 0 56 56" fill="none" stroke="#B4532A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 50 H52"></path><path d="M14 50 V6 M9 50 H19"></path><path d="M6 12 H50 M14 6 L26 12 M14 6 L6 12"></path><path d="M42 12 V22"></path><rect x="37" y="22" width="10" height="7"></rect><path d="M28 50 V36 H48 V50 M34 50 V43 H42 V50"></path></svg>
-<h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">בנייה</h3>
-<p style="margin: 0; font-size: 17px">ביצוע עבודות בנייה בתהליך מסודר, עם צוותים מנוסים וניהול עבודה צמוד בשטח.</p>
+<h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">עבודות גמר</h3>
+<p style="margin: 0; font-size: 17px">עבודות שלד וגמר בפרויקטים בהיקפים שונים – מהקמת השלד ועד לגימור האחרון, עם צוותים מנוסים וניהול צמוד של העבודה בשטח.</p>
 </div>
 <div style="flex: 1 1 260px; box-sizing: border-box; background: #FFFFFF; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 16px">
 <svg aria-hidden="true" width="60" height="60" viewBox="0 0 56 56" fill="none" stroke="#B4532A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="13" rx="2"></rect><path d="M42 12.5 H50 V26 H28 V33"></path><rect x="24" y="33" width="8" height="17" rx="2"></rect></svg>
-<h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">שיפוצים מורכבים ועבודות גמר</h3>
-<p style="margin: 0; font-size: 17px">עבודת הכנה יסודית, בחירת פתרונות מתאימים ועבודות גמר מוקפדות.</p>
+<h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.2; color: #0B2321">שיפוצים מורכבים</h3>
+<p style="margin: 0; font-size: 17px">משיפוץ דירות ובתים ועד להתאמת משרדים וחללים עסקיים – ביצוע מוקפד שמחבר בין התכנון, החומרים והפרטים הקטנים.</p>
 </div>
 </div>
 </div>
 </section>
-
-<section style="background: #0B2321; color: #FFFFFF">
-<blockquote style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 7vw, 104px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px clamp(24px, 4vw, 56px)">
-<span aria-hidden="true" style="flex: none; font-size: 130px; font-weight: 800; line-height: 0.66; height: 60px; color: #E3A27E">״</span>
-<p style="margin: 0; flex: 1 1 420px; max-width: 900px; font-size: clamp(30px, 3.8vw, 54px); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em">יש הבדל בין לדעת לבנות לבין לדעת לבצע פרויקט מורכב.</p>
-</blockquote>
-</section>
-
 <section style="background: #FFFFFF">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(28px, 6vw, 96px)">
 <h2 style="margin: 0; flex: 1 1 320px; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">חזקים בעבודות מורכבות</h2>
 <div style="flex: 1 1 420px; min-width: 0; max-width: 640px; display: flex; flex-direction: column; gap: 22px">
-<p style="margin: 0; max-width: 600px">עבודה על מבנה קיים דורשת תכנון קפדני, הבנה של המצב בשטח ויכולת להגיב לבעיות שמתגלות תוך כדי ביצוע. בפרויקטים של חיזוק מבנים, תוספת מרפסות ושיפוצים מורכבים, אנחנו עובדים בהתאם לתוכניות ולהנחיות המתכננים, תוך תיאום בין בעלי המקצוע והקפדה על כל שלב בעבודה.</p>
-<p style="margin: 0; max-width: 600px">הניסיון מאפשר לנו לבחון כל אתגר לעומק, לחשוב בצורה יצירתית ולמצוא את הדרך להתקדם – גם כשהפתרון לא מובן מאליו.</p>
+<p style="margin: 0; max-width: 600px">חיזוק של בניין קיים, תוספת מרפסות או שיפוץ עמוק בתוך מבנה פעיל הם לא עבודות שאפשר לבצע על אוטומט. כל פרויקט מגיע עם תנאי שטח משלו, מגבלות משלו והפתעות שלא תמיד מופיעות בתוכנית.</p>
+<p style="margin: 0; max-width: 600px">אנחנו בודקים את הפרטים, מתאמים בין בעלי המקצוע ופועלים בהתאם לתוכניות ולהנחיות המתכננים. כשעולה בעיה, אנחנו ניגשים לפתור אותה – באופן מעשי ואחראי, בלי לאבד את התמונה הגדולה.</p>
+<p style="margin: 0; max-width: 600px">הניסיון שצברנו מאפשר לנו לקחת על עצמנו גם פרויקטים מורכבים, ולמצוא את הדרך לבצע אותם היטב.</p>
 </div>
 </div>
 </section>
@@ -147,7 +134,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <section style="background: #B4532A; color: #FFFFFF">
 <blockquote style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 7vw, 104px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px clamp(24px, 4vw, 56px)">
 <span aria-hidden="true" style="flex: none; font-size: 130px; font-weight: 800; line-height: 0.66; height: 60px; color: #0B2321">״</span>
-<p style="margin: 0; flex: 1 1 420px; max-width: 900px; font-size: clamp(30px, 3.8vw, 54px); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em">אנחנו יודעים לקחת על עצמנו גם פרויקטים שנראים קשים לביצוע.</p>
+<p style="margin: 0; flex: 1 1 420px; max-width: 900px; font-size: clamp(30px, 3.8vw, 54px); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em">יש פרויקטים שאחרים רואים בהם בעיה. אנחנו רואים בהם אתגר שצריך לדעת לפתור.</p>
 </blockquote>
 </section>
 
@@ -156,31 +143,31 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">כך אנחנו עובדים</h2>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 16px">
 <li style="flex: 1 1 400px; min-width: 0; box-sizing: border-box; background: #FFFFFF; display: flex; align-items: stretch">
-<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">1</span>
+<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">01</span>
 <div style="min-width: 0; padding: clamp(20px, 2.6vw, 32px) clamp(18px, 2.6vw, 32px); display: flex; flex-direction: column; justify-content: center; gap: 6px">
 <h3 style="margin: 0; font-size: clamp(23px, 2.2vw, 28px); font-weight: 800; line-height: 1.2; color: #0B2321">בוחנים את הצרכים</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6">בוחנים כל אתגר לעומק ומבינים את המצב בשטח.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">מכירים את הפרויקט, בוחנים את השטח ואת התוכניות ומבינים מה חשוב לכם להשיג.</p>
 </div>
 </li>
 <li style="flex: 1 1 400px; min-width: 0; box-sizing: border-box; background: #FFFFFF; display: flex; align-items: stretch">
-<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">2</span>
+<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">02</span>
 <div style="min-width: 0; padding: clamp(20px, 2.6vw, 32px) clamp(18px, 2.6vw, 32px); display: flex; flex-direction: column; justify-content: center; gap: 6px">
 <h3 style="margin: 0; font-size: clamp(23px, 2.2vw, 28px); font-weight: 800; line-height: 1.2; color: #0B2321">מתכננים את הביצוע</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6">תכנון קפדני, בהתאם לתוכניות ולהנחיות המתכננים.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">מגבשים דרך עבודה בהתאם לתוכניות, להנחיות המתכננים ולתנאי השטח.</p>
 </div>
 </li>
 <li style="flex: 1 1 400px; min-width: 0; box-sizing: border-box; background: #FFFFFF; display: flex; align-items: stretch">
-<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">3</span>
+<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">03</span>
 <div style="min-width: 0; padding: clamp(20px, 2.6vw, 32px) clamp(18px, 2.6vw, 32px); display: flex; flex-direction: column; justify-content: center; gap: 6px">
-<h3 style="margin: 0; font-size: clamp(23px, 2.2vw, 28px); font-weight: 800; line-height: 1.2; color: #0B2321">מבצעים באחריות</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6">עבודה מסודרת בשטח, בתיאום בין בעלי המקצוע.</p>
+<h3 style="margin: 0; font-size: clamp(23px, 2.2vw, 28px); font-weight: 800; line-height: 1.2; color: #0B2321">מבצעים ומנהלים</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">מלווים את העבודה בשטח, מתאמים בין בעלי המקצוע ושומרים על קשר לאורך התהליך.</p>
 </div>
 </li>
 <li style="flex: 1 1 400px; min-width: 0; box-sizing: border-box; background: #FFFFFF; display: flex; align-items: stretch">
-<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">4</span>
+<span aria-hidden="true" style="flex: none; width: clamp(72px, 9vw, 104px); background: #12332F; color: #E3A27E; display: flex; align-items: center; justify-content: center; font-size: clamp(40px, 5vw, 60px); font-weight: 800; line-height: 1">04</span>
 <div style="min-width: 0; padding: clamp(20px, 2.6vw, 32px) clamp(18px, 2.6vw, 32px); display: flex; flex-direction: column; justify-content: center; gap: 6px">
 <h3 style="margin: 0; font-size: clamp(23px, 2.2vw, 28px); font-weight: 800; line-height: 1.2; color: #0B2321">מקפידים עד הגמר</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6">איכות ביצוע לכל אורך הדרך, עד לגימור האחרון.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">בודקים את הפרטים, משלימים את הנדרש ומוסרים עבודה שאפשר לעמוד מאחוריה.</p>
 </div>
 </li>
 </ol>
@@ -189,14 +176,17 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 
 <section id="projects" style="background: #12332F; color: #FFFFFF">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-direction: column; gap: clamp(40px, 6vw, 80px)">
+<div style="display: flex; flex-direction: column; gap: 18px">
 <h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em">פרויקטים</h2>
+<p style="margin: 0; max-width: 680px; font-size: 19px; color: #DDE5E2">כל פרויקט מביא איתו אתגרים אחרים. מה שמשותף לכולם הוא הגישה שלנו: להבין את העבודה לעומק, למצוא את הפתרון הנכון ולבצע אותו היטב.</p>
+</div>
 
 <article style="display: flex; flex-wrap: wrap; align-items: stretch; background: #FFFFFF; color: #26332F">
 <img src="images/tch10.jpg" alt="טשרניחובסקי 10 בתל אביב – חזית הבניין מהרחוב" style="display: block; flex: 3 1 420px; min-width: 0; width: 100%; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 40%">
 <div style="flex: 2 1 320px; min-width: 0; box-sizing: border-box; padding: clamp(28px, 3.4vw, 52px); display: flex; flex-direction: column; justify-content: center; gap: 18px">
 <span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: #FFFFFF; background: #12332F; padding: 5px 14px">פרויקט שהסתיים</span>
 <h3 style="margin: 0; font-size: clamp(34px, 3.6vw, 52px); font-weight: 800; line-height: 1.08; letter-spacing: -0.01em; color: #0B2321">טשרניחובסקי 10</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7">פרויקט תמ״א חיזוק בלב תל אביב. תוספת 2.5 קומות לבניין קיים, תוספת 19 ממ״דים, בניית שלד מורכב באזור מאתגר לעבודה וחפירת מרתפים.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7">פרויקט חיזוק בלב תל אביב, שכלל תוספת של 2.5 קומות לבניין קיים, הקמת 19 ממ״דים, חפירת מרתפים ועבודות שלד מורכבות באזור מאתגר לביצוע.</p>
 <dl style="margin: 0; display: flex; flex-direction: column; font-size: 17px">
 <div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 2px solid #0B2321"><dt style="font-weight: 700; color: #0B2321">עיר</dt><dd style="margin: 0">תל אביב</dd></div>
 <div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #D9D3C7; border-bottom: 1px solid #D9D3C7"><dt style="font-weight: 700; color: #0B2321">היקף העבודה</dt><dd style="margin: 0; text-align: left">עבודות שלד, חיזוק וגמר</dd></div>
@@ -210,7 +200,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: #0B2321; background: #E3A27E; padding: 5px 14px">שיפוץ דירה</span>
 <h3 style="margin: 0; font-size: clamp(34px, 3.6vw, 52px); font-weight: 800; line-height: 1.08; letter-spacing: -0.01em">ישראליס, תל אביב</h3>
 </div>
-<p style="margin: 0; max-width: 460px; font-size: 17px; color: #DDE5E2">שיפוץ מלא של דירת יוקרה בבניין באוהאוס משנות ה־30 בלב תל אביב, כולל נגרות אומן.</p>
+<p style="margin: 0; max-width: 460px; font-size: 17px; color: #DDE5E2">שיפוץ מלא של דירת יוקרה בבניין באוהאוס משנות ה־30 בלב תל אביב. הפרויקט כלל עבודות גמר מוקפדות ונגרות אומן, תוך התאמה לאופי המבנה ולחיים בתוכו.</p>
 </div>
 <div style="background: #0B2321; display: flex">
 <img id="g1-img" src="" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; max-height: 760px; object-fit: cover">
@@ -233,7 +223,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: #0B2321; background: #E3A27E; padding: 5px 14px">שיפוץ משרדים</span>
 <h3 style="margin: 0; font-size: clamp(34px, 3.6vw, 52px); font-weight: 800; line-height: 1.08; letter-spacing: -0.01em">משרדי הייטק, תל אביב</h3>
 </div>
-<p style="margin: 0; max-width: 460px; font-size: 17px; color: #DDE5E2">שיפוץ מבנה ישן של 200 מ״ר בלב תל אביב בתקציב נמוך, והתאמה לצרכים של חברת הייטק צעירה וצומחת.</p>
+<p style="margin: 0; max-width: 460px; font-size: 17px; color: #DDE5E2">שיפוץ מבנה קיים בשטח של כ־200 מ״ר והתאמתו למשרדים של חברת הייטק צומחת. תכנון הביצוע ועבודות הגמר יצרו סביבת עבודה חדשה במסגרת תקציב מוגדר.</p>
 </div>
 <div style="background: #0B2321; display: flex">
 <img id="g2-img" src="" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; max-height: 760px; object-fit: cover">
@@ -256,33 +246,25 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap-reverse; align-items: center; gap: clamp(36px, 5vw, 80px)">
 <img src="images/apt-kitchen.jpg" alt="המטבח בדירה בישראליס: ארונות עץ, משטח בהיר וחלון רחב" style="display: block; flex: 1 1 360px; min-width: 0; width: 100%; aspect-ratio: 4 / 3; object-fit: cover">
 <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">איכות שרואים. אחריות שמרגישים.</h2>
-<p style="margin: 0; max-width: 600px">איכות של עבודה נמדדת גם במה שרואים וגם במה שנמצא מתחת לפני השטח. היא ניכרת בחיבורים, בקווים הנקיים, ברמת הגמר ובאופן שבו כל פרט משתלב בתוצאה הסופית.</p>
-<p style="margin: 0; max-width: 600px">לכן אנחנו מקפידים על איכות הביצוע לכל אורך הדרך, מהעבודות הראשונות ועד לגימור האחרון. מבחינתנו, הפרטים הקטנים הם חלק בלתי נפרד מהתוצאה הגדולה.</p>
+<h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">איכות שרואים.<br>אחריות שמרגישים.</h2>
+<p style="margin: 0; max-width: 600px">עבודה טובה נמדדת גם במה שרואים וגם במה שנמצא מאחורי הקירות. לכן חשוב לנו לבצע נכון בכל שלב – מהתשתיות והחיבורים ועד לגימור האחרון.</p>
+<p style="margin: 0; max-width: 600px">אנחנו עובדים עם צוותים מנוסים ובעלי מקצוע שמבינים את החשיבות של דיוק, סדר ואיכות ביצוע. התוצאה צריכה לא רק להיראות טוב ביום המסירה, אלא לשרת את מי שמשתמש בה לאורך זמן.</p>
 </div>
 </div>
 </section>
-
-<section style="background: #0B2321; color: #FFFFFF">
-<blockquote style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 7vw, 104px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px clamp(24px, 4vw, 56px)">
-<span aria-hidden="true" style="flex: none; font-size: 130px; font-weight: 800; line-height: 0.66; height: 60px; color: #E3A27E">״</span>
-<p style="margin: 0; flex: 1 1 420px; max-width: 900px; font-size: clamp(30px, 3.8vw, 54px); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em">עבודה טובה לא מסתיימת כשהשלד עומד.</p>
-</blockquote>
-</section>
-
 <section id="about" style="background: #EFEAE0">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(28px, 6vw, 96px)">
-<h2 style="margin: 0; flex: 1 1 320px; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">חברה משפחתית. ניסיון של עשרות שנים.</h2>
+<h2 style="margin: 0; flex: 1 1 320px; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; color: #0B2321">חברה משפחתית.<br>ניסיון של עשרות שנים.</h2>
 <div style="flex: 1 1 420px; min-width: 0; max-width: 640px; display: flex; flex-direction: column; gap: 22px">
-<p style="margin: 0">אנחנו חברה משפחתית ותיקה וקבלן רשום בסיווג ג׳1, עם ניסיון של עשרות שנים בפרויקטים ברחבי הארץ. לאורך השנים ביצענו עבודות בהיקפים שונים – משיפוצים מורכבים ועבודות גמר ועד לפרויקטים של תמ״א 38, חיזוק מבנים ותוספת מרפסות.</p>
-<p style="margin: 0">אנחנו יודעים איך עובדים בתוך מבנה קיים, איך מתמודדים עם תנאי שטח מאתגרים, ואיך מוצאים פתרונות טובים בלי להתפשר על איכות העבודה. זה הניסיון שאנחנו מביאים איתנו לכל פרויקט.</p>
-<p style="margin: 0">כחברה משפחתית, חשוב לנו להיות מעורבים בפרטים ולהכיר את האנשים שמאחורי כל פרויקט. אנחנו מאמינים בתקשורת ישירה, בזמינות ובאחריות אישית לביצוע – מהעבודה הראשונה בשטח ועד לפרטי הגמר.</p>
+<p style="margin: 0">לימן גולן היא חברה משפחתית ותיקה וקבלן רשום בסיווג ג׳1. לאורך השנים ביצענו פרויקטים בהיקפים שונים ברחבי הארץ – משיפוצים מורכבים ועבודות גמר ועד לחיזוק מבנים, תמ״א 38, תוספות בנייה ומרפסות.</p>
+<p style="margin: 0">אנחנו יודעים איך לעבוד בתוך מבנה קיים, להתמודד עם תנאי שטח מאתגרים ולמצוא פתרונות גם כשהדרך לביצוע לא מובנת מאליה. זה הניסיון שאנחנו מביאים איתנו לכל פרויקט.</p>
+<p style="margin: 0">כחברה משפחתית, חשוב לנו להכיר את האנשים שמאחורי כל עבודה ולהיות מעורבים בפרטים. אנחנו מאמינים בתקשורת ישירה, בזמינות ובאחריות אישית – מהמפגש הראשון ועד למסירת העבודה.</p>
 <figure style="margin: 14px 0 0; padding-top: 28px; border-top: 2px solid #0B2321; display: flex; align-items: center; gap: 22px">
 <img src="images/golan.jpg" alt="גולן כהן נשען על מעקה גג ומשקיף אל העיר" style="display: block; width: 112px; height: 140px; flex: none; object-fit: cover; object-position: 62% 22%">
 <figcaption style="display: flex; flex-direction: column; gap: 2px">
 <span style="font-size: 26px; font-weight: 800; color: #0B2321; line-height: 1.3">גולן כהן</span>
-<span style="font-size: 16px; font-weight: 500">קבלן רשום</span>
-<span style="font-size: 16px; font-weight: 500">מנהל עבודה רשום</span>
+<span style="font-size: 16px; font-weight: 500">בעלים ומנכ״ל</span>
+<span style="font-size: 16px; font-weight: 500">קבלן רשום ומנהל עבודה רשום</span>
 </figcaption>
 </figure>
 </div>
@@ -299,8 +281,8 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <section id="contact" style="background: #12332F; color: #FFFFFF">
 <div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 8vw, 128px) clamp(24px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(36px, 5vw, 80px)">
 <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-<h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em">מחפשים קבלן רשום לבנייה, לשיפוץ או לחיזוק מבנה?</h2>
-<p style="margin: 0; max-width: 500px; font-size: 20px; color: #DDE5E2">נשמח לשמוע על הפרויקט שלכם ולבחון יחד איך להוציא אותו לפועל.</p>
+<h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -0.015em">יש לכם פרויקט בראש?<br>בואו נבין איך מקדמים אותו.</h2>
+<p style="margin: 0; max-width: 500px; font-size: 20px; color: #DDE5E2">בנייה, חיזוק, תוספת או שיפוץ מורכב – ספרו לנו מה אתם מתכננים. נקשיב, נבחן את הפרטים ונחזור אליכם לשיחה.</p>
 <div style="display: flex; flex-direction: column; gap: 2px; font-size: 26px; font-weight: 800; color: #E3A27E; padding-top: 8px">
 <a href="tel:+972505333178" dir="ltr" style="color: #E3A27E; text-decoration: none; align-self: flex-start">050-533-3178</a>
 </div>
@@ -329,7 +311,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <span style="display: flex; align-items: stretch; gap: 14px">
 <span style="display: flex; flex-direction: column; font-size: 36px; font-weight: 900; line-height: 0.92; letter-spacing: -0.02em"><span>לימן</span><span>גולן<span aria-hidden="true" style="display: inline-block; width: 8px; height: 8px; background: #E3A27E; margin-inline-start: 4px"></span></span></span>
 <span aria-hidden="true" style="width: 2px; background: #FFFFFF"></span>
-<span style="display: flex; flex-direction: column; justify-content: flex-end; font-size: 14px; font-weight: 500; line-height: 1.25; padding-bottom: 3px; color: #DDE5E2"><span>הנדסה</span><span>וביצוע</span></span>
+<span style="display: flex; flex-direction: column; justify-content: flex-end; font-size: 14px; font-weight: 500; line-height: 1.25; padding-bottom: 3px; color: #DDE5E2"><span>הנדסה</span><span>וביצוע בע״מ</span></span>
 </span>
 </div>
 <div style="display: flex; flex-direction: column; font-size: 15px; line-height: 1.75; color: #DDE5E2">
