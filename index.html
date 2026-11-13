@@ -38,15 +38,18 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 <body>
 <div dir="rtl" style="font-family: 'Heebo', 'Arial Hebrew', Arial, sans-serif; color: #26332F; background: #FFFFFF; font-size: 18px; font-weight: 400; line-height: 1.75; overflow-x: clip">
 
-<header style="position: sticky; top: 0; z-index: 50; height: 0; overflow: visible">
-<button type="button" id="menuBtn" aria-label="פתיחת התפריט" aria-expanded="false" aria-controls="menu" style="position: absolute; top: 14px; left: clamp(14px, 3vw, 28px); z-index: 2; width: 54px; height: 54px; padding: 0; border: 0; border-radius: 0; background: #0B2321; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; box-shadow: 0 4px 14px rgba(0,0,0,0.22)">
-<span aria-hidden="true" style="width: 28px; height: 3px; background: #FFFFFF"></span>
-<span aria-hidden="true" style="width: 28px; height: 3px; background: #FFFFFF"></span>
-<span aria-hidden="true" style="width: 28px; height: 3px; background: #E3A27E"></span>
+<header style="position: sticky; top: 0; z-index: 50; background: #12332F; border-bottom: 1px solid rgba(255,255,255,0.14)">
+<div style="position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 10px clamp(16px, 5vw, 56px); display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#" aria-label="לימן גולן – לראש העמוד" style="display: inline-flex; align-items: baseline; margin-inline-start: 8px; text-decoration: none; color: #FFFFFF; font-size: clamp(29px, 2.9vw, 35px); font-weight: 900; line-height: 1; letter-spacing: -0.02em; white-space: nowrap">לימן גולן<span aria-hidden="true" style="display: inline-block; width: 0.22em; height: 0.22em; background: #E3A27E; margin-inline-start: 0.12em"></span></a>
+<button type="button" id="menuBtn" aria-label="פתיחת התפריט" aria-expanded="false" aria-controls="menu" style="flex: none; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 0; background: #0B2321; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px">
+<span aria-hidden="true" style="width: 26px; height: 3px; background: #FFFFFF"></span>
+<span aria-hidden="true" style="width: 26px; height: 3px; background: #FFFFFF"></span>
+<span aria-hidden="true" style="width: 26px; height: 3px; background: #E3A27E"></span>
 </button>
+</div>
 
-<nav id="menu" hidden aria-label="ניווט ראשי" style="position: absolute; top: 0; left: 0; right: 0; background: #0B2321; box-shadow: 0 10px 30px rgba(0,0,0,0.3)">
-<div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 82px clamp(20px, 5vw, 56px) 24px; display: flex; flex-direction: column">
+<nav id="menu" hidden aria-label="ניווט ראשי" style="position: absolute; top: 100%; left: 0; right: 0; background: #0B2321; box-shadow: 0 10px 30px rgba(0,0,0,0.3)">
+<div style="max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 8px clamp(20px, 5vw, 56px) 24px; display: flex; flex-direction: column">
 <a href="#services" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">תחומי עבודה</a>
 <a href="#projects" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">פרויקטים</a>
 <a href="#about" class="mlink" style="text-decoration: none; color: #FFFFFF; font-size: 22px; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.25)">אודות</a>
@@ -57,13 +60,8 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 </header>
 
 <section id="top" style="background: #12332F; color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: stretch">
-<div style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: 14px clamp(24px, 6vw, 96px) clamp(48px, 7vw, 112px); display: flex; flex-direction: column; justify-content: flex-start; gap: 14px">
-<h1 aria-label="לימן גולן הנדסה וביצוע בע״מ" style="margin: 0; font: inherit; align-self: flex-start; display: flex; align-items: stretch; gap: clamp(14px, 1.6vw, 20px); margin-bottom: clamp(44px, 7vw, 96px)">
-<span style="display: flex; flex-direction: column; font-size: clamp(48px, 5.4vw, 76px); font-weight: 900; line-height: 0.92; letter-spacing: -0.02em; color: #FFFFFF"><span>לימן</span><span>גולן<span aria-hidden="true" style="display: inline-block; width: 0.2em; height: 0.2em; background: #E3A27E; margin-inline-start: 0.1em"></span></span></span>
-<span aria-hidden="true" style="width: 3px; background: #FFFFFF"></span>
-<span style="display: flex; flex-direction: column; justify-content: flex-end; font-size: clamp(16px, 1.6vw, 22px); font-weight: 500; line-height: 1.3; padding-bottom: 0.3em; color: #DDE5E2"><span>הנדסה</span><span>וביצוע בע״מ</span></span>
-</h1>
-<p class="slogan" style="margin: 0; font-size: clamp(42px, 5.6vw, 84px); font-weight: 800; line-height: 1.04; letter-spacing: -0.015em">בונים טוב.<br>גם כשמורכב.</p>
+<div style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(40px, 6vw, 96px) clamp(24px, 6vw, 96px) clamp(48px, 7vw, 112px); display: flex; flex-direction: column; justify-content: center; gap: 14px">
+<h1 style="margin: 0; font-size: clamp(42px, 5.6vw, 84px); font-weight: 800; line-height: 1.04; letter-spacing: -0.015em">בונים טוב.<br>גם כשמורכב.</h1>
 <p style="margin: 0; max-width: 520px; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.6; color: #DDE5E2">חיזוק מבנים, תוספות בנייה ושיפוצים מורכבים. ניסיון של עשרות שנים, צוותים מקצועיים ואחריות אישית משלב התכנון ועד לפרט האחרון.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: clamp(18px, 2.4vw, 28px)">
 <a href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 10px 30px; background: #B4532A; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none">דברו איתנו על הפרויקט שלכם</a>
